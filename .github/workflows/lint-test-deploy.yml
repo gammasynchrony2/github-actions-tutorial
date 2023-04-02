@@ -7,9 +7,9 @@ jobs:
       - name: Get code
         use: actions/checkout@v3
       - name: Install NodeJS
-        use: actions/setup-node@v3
-          with:
-            node-version: 14
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - name: Install dependencies
         run: npm ci
       - name: Run linter
