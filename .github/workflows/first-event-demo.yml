@@ -1,0 +1,12 @@
+name: Pull Request Open
+on:
+  pull_request:
+    types:
+      - opened
+  workflow_dispatch:
+jobs:
+  print-confirmation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print confirmation
+        run: echo "Confirmed!"
