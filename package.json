@@ -5,11 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "lint": "eslint --ext .jsx --fix src",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run"
   },
   "dependencies": {
+    "eslint": "^8.37.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
