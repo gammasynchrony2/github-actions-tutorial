@@ -1,0 +1,17 @@
+name: Push and Pull Request
+on:
+  pull_request:
+    types:
+      - opened
+  workflow_dispatch:
+  push:
+    branches:
+      - main # main
+      - "dev-*" # dev-new dev-this-is-new
+      - "feat/**" # feat/new feat/new/button
+jobs:
+  print-confirmation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print confirmation
+        run: echo "Confirmed!"
