@@ -26,9 +26,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: dist-files
-          path: |
-            dist
-            paskage.json
+          path: dist
+          # path: |
+          #   dist
+          #   paskage.json
   deploy:
     needs: build
     runs-on: ubuntu-latest
